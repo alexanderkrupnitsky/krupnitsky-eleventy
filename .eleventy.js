@@ -24,7 +24,7 @@ module.exports = (eleventyConfig) => {
   // /Eleventy plugin cache buster
 
   // SHORTCODES
-  // THUMB
+  // THUMB from CLoudinary
   eleventyConfig.addShortcode(
     'image',
     (src, className, title, figcaption, width, height) => {
