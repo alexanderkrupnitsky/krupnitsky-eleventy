@@ -1,19 +1,18 @@
-@import '/tailwind.css';
+@import '/core/tailwind.css';
 
-@import '/main.scss';
-@import '/grid.scss';
-@import '/layout.scss';
-@import '/typography.scss';
+@import '/core/main.scss';
+@import '/core/grid.scss';
+@import '/core/layout.scss';
+@import '/core/typography.scss';
 
-@import '/components-css/accordion.scss';
-@import '/components-css/button.scss';
-@import '/components-css/card.scss';
-@import '/components-css/carousel.scss';
-@import '/components-css/divider.scss';
-@import '/components-css/footer.scss';
-@import '/components-css/krupnitsky-logo.scss';
-@import '/components-css/logo.scss';
-@import '/components-css/nav.scss';
-@import '/components-css/strike.scss';
-@import '/components-css/totop.scss';
-@import '/components-css/zigzag.scss';
+@import '../components/accordion/accordion.scss';
+@import '../components/button.scss';
+@import '../components/carousel/carousel.scss';
+@import '../components/divider.scss';
+@import '../components/footer/footer.scss';
+@import '../components/krupnitsky-logo.scss';
+@import '../components/logo.scss';
+@import '../components/nav.scss';
+@import '../components/strike.scss';
+@import '../components/totop.scss';
+@import '../components/zigzag.scss';
