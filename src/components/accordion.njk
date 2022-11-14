@@ -1,0 +1,16 @@
+<div class="tab">
+	<input type="radio" id="rd{{ loop.index }}" name="rd">
+	<label class="tab-label" for="rd{{ loop.index }}">
+		<h3 class="grid-flow-col">
+			<div>
+				<span class="num">{{ prop.lesson }}</span>
+				<span class="lesson">урок</span>
+			</div>
+			<span class="title">{{ prop.title }}</span>
+		</h3>
+		<div class="arrow"></div>
+	</label>
+	<div class="tab-content">
+		<p>{{ prop.desc }}</p>
+	</div>
+</div>

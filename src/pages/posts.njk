@@ -1,0 +1,42 @@
+---
+layout: posts-layout.njk
+permalink: /blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% else %}{% endif %}
+canonical: /blog/
+pagination:
+  data: collections.posts
+  size: 12
+  reverse: true
+title: Блог Александры Краснобаевой
+description: Читайте мой блог о вязании, творчестве, моде, о моих курсах по вязнаию и заработке в интернете.
+---
+<h1>Блог</h1>
+{# POSTS #}
+<div class="posts grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-10">
+	{% for prop in pagination.items %}
+		{# POST #}
+		<div class="post">
+			{# THUMB #}
+			<a class="thumb-link" href="{{ prop.url | url }}">
+				{% image prop.data.thumb,
+				'',
+				title %}
+			</a>
+			{# /THUMB #}
+
+			{# HEADING #}
+			<a href="{{ prop.url | url }}">
+				<h2>{{ prop.data.title }}</h2>
+			</a>
+			<p>{{ prop.data.description }}</p>
+			{# /HEADING #}
+			{# BUTTON #}
+			<a class="btn" href="{{ prop.url | url }}">Читать</a>
+			{# /BUTTON #}
+		</div>
+		{# /POST #}
+	{% endfor %}
+</div>
+{# /POSTS #}
+{# PAGINATION #}
+{% include "pagination.njk" %}
+{# /PAGINATION #}

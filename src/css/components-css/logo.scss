@@ -1,0 +1,16 @@
+#header {
+  @apply items-center m-0 bg-[#f3ece7];
+
+  a.logo {
+    @apply my-7 justify-self-start pl-4 xl:pl-0 xl:pr-0;
+  }
+
+  .svglogo {
+    @apply h-5;
+    fill: black;
+
+    &:hover {
+      fill: #ef4343;
+    }
+  }
+}

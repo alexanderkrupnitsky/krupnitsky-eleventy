@@ -1,0 +1,11 @@
+.totop {
+  @apply justify-items-center justify-center text-center;
+}
+
+.totop img {
+  @apply m-auto w-8 h-auto;
+}
+
+.totop p {
+  @apply font-display uppercase text-lg font-extralight hover:text-hover text-dark mt-[-5px];
+}

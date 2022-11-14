@@ -1,0 +1,31 @@
+#footer {
+  @apply bg-gray-800 px-4 pt-[100px] pb-[30px] text-white;
+
+  a {
+    @apply text-white hover:text-hover;
+  }
+
+  nav {
+    @apply mb-40 w-fit grid-cols-2 items-start gap-5 sm:grid-cols-3 sm:gap-20;
+
+    .menu {
+      @apply justify-items-start;
+    }
+
+    h3 {
+      @apply mb-6 text-2xl;
+    }
+
+    a {
+      @apply mb-4;
+    }
+
+    svg {
+      @apply justify-self-start fill-white;
+    }
+  }
+
+  .info {
+    @apply text-base;
+  }
+}

@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display font-extrabold;
+}
+
+p {
+  @apply mb-4 transition-all;
+}
+
+li {
+  @apply mb-1 ml-5 list-disc leading-normal;
+}
+
+a {
+  @apply text-link hover:text-hover;
+}
+
+img {
+  @apply grid h-auto w-full object-cover object-bottom;
+}
+
+picture {
+  @apply m-0 p-0;
+}
+
+figcaption {
+  @apply m-0 mt-[-30px] mb-10 max-w-[768px] p-0 text-center italic;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+a,
+svg,
+path,
+li {
+  @apply transition-all;
+}

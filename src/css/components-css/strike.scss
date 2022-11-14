@@ -1,0 +1,18 @@
+.strike {
+  position: relative;
+  overflow: hidden; /* запрещает обтекать другие блоки */
+}
+
+.strike:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0) url('../images/strike.svg') no-repeat;
+  background-size: 100% 100%; /* растягивает фон на всю ширину и высоту блока */
+}

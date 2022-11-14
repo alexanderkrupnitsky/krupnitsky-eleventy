@@ -1,0 +1,19 @@
+@import '/tailwind.css';
+
+@import '/main.scss';
+@import '/grid.scss';
+@import '/layout.scss';
+@import '/typography.scss';
+
+@import '/components-css/accordion.scss';
+@import '/components-css/button.scss';
+@import '/components-css/card.scss';
+@import '/components-css/carousel.scss';
+@import '/components-css/divider.scss';
+@import '/components-css/footer.scss';
+@import '/components-css/krupnitsky-logo.scss';
+@import '/components-css/logo.scss';
+@import '/components-css/nav.scss';
+@import '/components-css/strike.scss';
+@import '/components-css/totop.scss';
+@import '/components-css/zigzag.scss';

@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true,
+    ".nuxt": true,
+    ".output": true,
+    "dist": true,
+    ".gitignore": true,
+    ".eslintrc": true,
+    "package-lock.json": true,
+    "tsconfig.json": true,
+    ".eslintignore": true
+  },
+  "cSpell.language": "en,ru",
+  "cSpell.words": ["Краснобаева", "krasnobaeva"]
+}

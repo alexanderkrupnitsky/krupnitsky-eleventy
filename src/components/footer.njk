@@ -1,0 +1,60 @@
+</main>
+<footer id="footer" role="contentinfo">
+{# NAV #}
+<nav>
+	<div class="menu">
+		<h3>Страницы</h3>
+		{% for prop in data.navUrlFooter %}
+			<a href="{{prop.url}}">{{prop.text}}</a>
+		{% endfor %}
+	</div>
+	<div class="menu">
+		<h3>Курсы</h3>
+		<a href="#!">Вязание спицами</a>
+		<a href="#!">Продвижение в соцсетях</a>
+		<a href="#!">Личный бренд</a>
+		<a href="#!">Производство контента</a>
+	</div>
+	<div class="menu">
+		<h3>Контакты</h3>
+		{% for prop in data.social %}
+			<a href="{{prop.url}}" target="_blank">{{prop.text}}</a>
+		{% endfor %}
+		{% include "email.njk" %}
+	</div>
+</nav>
+{# /NAV #}
+<div class="info grid-cols-1 md:grid-cols-3 w-full">
+	<div class="hiddenblock hidden md:grid"></div>
+	{# LEGAL #}
+	<div class="legal">
+		<div class="privacy">
+			<a class="mb-1" href="#!" target="_blank">Политика конфиденциальности</a>
+		</div>
+		<div class="terms">
+			<a href="#!" target="_blank">Пользовательское соглашение</a>
+		</div>
+		<div class="copy mt-4">
+			<p>&copy; 2011-<span id="currentyear"></span> Krasnobaeva.com. Все права защищены</p>
+		</div>
+	</div>
+	{# /LEGAL #}
+	{# SUPPORTED #}
+	<div class="supported">
+		{# <a href="#!" target="_blank"> #}
+		{% include "svg/krupnitsky-logo.njk" %}
+		{# </a> #}
+	</div>
+	{# SUPPORTED #}
+</div>
+</footer>
+
+{# SCRIPTS #}
+{% for prop in js %}
+<script defer src="/js/{{ prop }}"></script>
+{% endfor %}
+<script defer src="/js/currentyear.js"></script>
+{# /SCRIPTS #}
+
+</body>
+</html>

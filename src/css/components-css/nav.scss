@@ -1,0 +1,131 @@
+// ======== /MENU ==========
+#header {
+  .menu {
+    @apply pr-4 xl:pr-0 text-[15px] lg:text-base;
+  }
+  .menu,
+  .resp-menu {
+    @apply grid-flow-col auto-cols-max xl:auto-cols-auto  justify-self-end gap-4;
+    a {
+      @apply text-black hover:text-hover font-normal font-cond uppercase;
+    }
+  }
+  [aria-current] {
+    border-bottom: 1px solid hsl(0 0% 50%);
+  }
+}
+// ======== /MENU ==========
+
+// ======== RESPONSIVE MENU ==========
+#header {
+  @media (min-width: 320px) {
+    .hidden-menu {
+      display: block;
+      position: fixed;
+      padding: 20px 0 0;
+      margin: 0;
+      box-sizing: border-box;
+      width: 80%;
+      background-color: #eee;
+      height: 100%;
+      top: 0;
+      right: -80%;
+      transition: right 0.2s;
+      z-index: 2;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+
+      a {
+        @apply py-2;
+      }
+    }
+  }
+
+  @media (min-width: 425px) {
+    .hidden-menu {
+      width: 60%;
+      right: -60%;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .hidden-menu {
+      width: 50%;
+      right: -50%;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .hidden-menu {
+      width: 40%;
+      right: -40%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hidden-menu {
+      width: 35%;
+      right: -35%;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .hidden-menu-ticker {
+    display: none;
+  }
+
+  .btn-menu {
+    color: #fff;
+    padding: 0;
+    position: fixed;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+    transition: right 0.23s;
+    z-index: 3;
+    width: 25px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .btn-menu span {
+    display: block;
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin: 5px 0 0;
+    transition: all 0.1s linear 0.1s;
+    position: relative;
+  }
+  .btn-menu span.first {
+    margin-top: 10px;
+  }
+
+  .hidden-menu-ticker:checked ~ .btn-menu {
+    right: 15px;
+  }
+
+  .hidden-menu-ticker:checked ~ .btn-menu span {
+    height: 5px;
+  }
+  .hidden-menu-ticker:checked ~ .hidden-menu {
+    right: 0;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 6px;
+    height: 5px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+    height: 1px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+    height: 5px;
+  }
+}
+// ======== /RESPONSIVE MENU ==========

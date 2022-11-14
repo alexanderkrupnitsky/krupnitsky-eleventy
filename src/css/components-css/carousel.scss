@@ -1,0 +1,28 @@
+.swiper {
+  @apply block h-auto w-full;
+}
+
+.swiper-wrapper {
+  @apply block pb-5;
+}
+
+.swiper-pagination {
+  @apply left-0 right-0 m-auto block;
+  width: fit-content !important;
+  bottom: -10px !important;
+  left: 0 !important;
+}
+
+.swiper-slide {
+  @apply block;
+  //   height: fit-content !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  border-radius: 30px !important;
+  color: hsl(0deg 0% 100%) !important;
+  background: hsl(0deg 0% 0% / 45%) !important;
+  padding: 7px 11px !important;
+  font-size: 16px !important;
+}

@@ -1,0 +1,14 @@
+<div class="swiper {{ classnameSwiper }}">
+	<div class="swiper-wrapper">
+		{% for prop in carousel %}
+			<div class="swiper-slide">
+				{% image prop,
+				'',
+				title %}
+			</div>
+		{% endfor %}
+	</div>
+	<div class="swiper-pagination block"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+</div>

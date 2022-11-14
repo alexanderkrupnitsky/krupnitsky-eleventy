@@ -1,0 +1,57 @@
+---
+id: post
+css:
+- post.css
+---
+{% include 'head.njk' %}
+{% include 'header.njk' %}
+
+<main>
+	<article>
+		{# HEADING #}
+		<section class="heading w1200">
+			{# THUMB #}
+			{% image thumb,
+			'',
+			title %}
+			{# /THUMB #}
+		</section>
+		{# /HEADING #}
+
+		{# CONTENT #}
+		<div class="content w1200">
+			{# INFO #}
+			<div class="info grid-cols-1 md:grid-cols-2">
+				{# SOCIAL #}
+				<div class="social order-2 md:order-1">
+					<div class="social-link grid-flow-col">
+						{% for prop in data.social %}
+							<a href="{{ prop.url }}" target="_blank"><img src="{{ prop.icon }}" alt="{{ prop.alt }}"></a>
+						{% endfor %}
+					</div>
+				</div>
+				{# /SOCIAL #}
+
+				{# AVATAR #}
+				<a class="avatar grid order-1 md:order-2 col-span-2 md:col-span-1" href="{{ data.author.about }}">
+					<img src="{{ data.author.avatar }}" alt="{{ data.author.name }}">
+					<div class="name">{{ data.author.name }}</div>
+				</a>
+				{# /AVATAR #}
+
+			</div>
+			{# INFO #}
+
+			{# TITLE #}
+			<h1>{{ title }}</h1>
+			{# /TITLE #}
+
+			<div class="text">
+				{{ content | safe }}
+			</div>
+		</div>
+		{# /CONTENT #}
+	</article>
+</main>
+
+{% include 'footer.njk' %}

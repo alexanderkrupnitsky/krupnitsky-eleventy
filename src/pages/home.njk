@@ -1,0 +1,126 @@
+---
+layout: home-layout.njk
+permalink: /
+title: KRASNOBAEVA - официальный сайт Александры Краснобаевой
+description: Официальный сайт блогера Александры Краснобаевой. Курсы по вязанию и заработку в интернете. Новости. Мода.
+---
+{# ========== HERO ========== #}
+<section id="hero" class="w1200">
+	<div class="bg">
+		<div class="textbar drop-shadow-2xl">
+			<h3>Мой официальный сайт</h3>
+			<h1>{% include 'svg/logo.njk' %}</h1>
+			<div class="features">
+				<h4>Обучаю вязанию</h4>
+				<h4>Вяжу одежду</h4>
+				<h4>Создаю украшения</h4>
+			</div>
+		</div>
+	</div>
+</section>
+{# ========== /HERO ========== #}
+{# ========== STORY ========== #}
+<section id="story" class="story w1200">
+	{# CONTENT #}
+	<div class="content">
+		{# GROUP #}
+		<div class="group">
+			{% image
+			'https://res.cloudinary.com/dr24pbwrs/image/upload/v1641395617/krasnobaeva.com/homepage/story-1_pdehe5.jpg',
+			'imgbar' %}
+			<div class="textbar">
+				<h4>Почитайте</h4>
+				<h3>Обо мне</h3>
+				<p>
+            Я расскажу вам о своём пути, как я начала вязать и как пришла к
+            обучению, о вдохновении и трудностях, об обучении и увлечениях, о
+            моих знаменитых клеточках и о том, почему вязание для меня - главная
+            страсть в жизни
+          </p>
+				<a href="/about/" class="btn">Читать</a>
+			</div>
+		</div>
+		{# /GROUP #}
+		{# GROUP #}
+		<div class="group">
+			{% image
+			'https://res.cloudinary.com/dr24pbwrs/image/upload/v1641398521/krasnobaeva.com/homepage/story-2_zixjzq.jpg',
+			'imgbar' %}
+			<div class="textbar">
+				<h4>Записывайтесь</h4>
+				<h3>Курсы</h3>
+				<p>
+            Я провожу курсы, интенсивы и практикумы по вязанию спицами, дизайну,
+            фотографии и развитию soft skills. Выбирайте нужный вам материал и
+            записывайтесь на обучение
+          </p>
+				<a href="/courses/" class="btn">Подробнее</a>
+			</div>
+		</div>
+		{# GROUP #}
+	</div>
+	{# /CONTENT #}
+</section>
+{# ========== /STORY ========== #}
+{# ========== INTENSIV ========== #}
+<section id="intensiv" class="story w1200">
+	{# HEADING #}
+	<div class="heading">
+		<h2>Отличия Курса от Интенсива</h2>
+	</div>
+	{# /HEADING #}
+	{# CONTENT #}
+	<div class="content">
+		{# GROUP #}
+		<div class="group">
+			{% image
+			'https://res.cloudinary.com/dr24pbwrs/image/upload/v1641400688/krasnobaeva.com/homepage/intensiv-1_xmrfgm.jpg',
+			'imgbar' %}
+			<div class="textbar">
+				<h3>Курс - это:</h3>
+				<ul>
+					<li>Цикл заранее записанных видеоуроков</li>
+					<li>Максимально хорошее качество</li>
+					<li>Четкие объяснения теории — как делать расчеты</li>
+					<li>
+              Подробная практическая часть — как вязать конкретное изделие
+            </li>
+					<li>Видео можно смотреть в любое удобное время</li>
+					<li>Выполнять работу можно в своем темпе</li>
+					<li>Есть обратная связь от меня</li>
+					<li>Участники добавляются в мой закрытый чат</li>
+				</ul>
+			</div>
+		</div>
+		{# /GROUP #}
+		{# GROUP #}
+		<div class="group">
+			{% image
+			'https://res.cloudinary.com/dr24pbwrs/image/upload/v1641400688/krasnobaeva.com/homepage/intensiv-2_vxbfnw.jpg',
+			'imgbar' %}
+			<div class="textbar">
+				<h3>Интенсив- это:</h3>
+				<ul>
+					<li>Цикл открытых прямых эфиров на YouTube</li>
+					<li>Объяснения в реальном времени — как делать расчеты</li>
+					<li>Вязание вместе с вами в прямых эфирах</li>
+					<li>Можно вязать свою модель</li>
+					<li>Можно вязать изделие на себя, мужа или ребенка</li>
+					<li>Сжатые сроки — 3-4 недели</li>
+					<li>Прокачка скорости вязания</li>
+					<li>Постоянная обратная связь от меня</li>
+					<li>Домашние задания</li>
+					<li>Закрытый чат для участниц</li>
+					<li>Сертификат о прохождении интенсива</li>
+				</ul>
+			</div>
+		</div>
+		{# /GROUP #}
+	</div>
+	{# CONTENT #}
+</section>
+{# ========== /INTENSIV ========== #}
+
+{# ========== REVIEWS ========== #}
+{% include 'reviews.njk' %}
+{# ========== /REVIEWS ========== #}

@@ -1,0 +1,45 @@
+---
+layout: posts-layout.njk
+permalink: /courses/
+pagination:
+  data: collections.promo
+  size: 12
+  reverse: true
+title: Курсы Александры Краснобаевой
+description: Все мои курсы, которые помогут вам жить более счастливую и наполненную жизнь
+---
+<h1>Курсы</h1>
+{# POSTS #}
+<div class="posts grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-10 mb-10 justify-items-start">
+	{% for prop in pagination.items %}
+		<div class="post">
+			{# THUMB #}
+			<a class="thumb-link" href="{{ prop.url | url }}">
+				{% image prop.data.thumb,
+				'' %}
+			</a>
+			{# /THUMB #}
+			{# # TAGS # #}
+			<div class="tags">
+				{% for tag in prop.data.tags -%}
+					{% if tag !== 'promo' %}
+						{% if loop.index0 < 2 %}
+							<a class="tag" href="{{ prop.url | url }}">{{ tag }}</a>
+						{% endif %}
+					{% endif %}
+				{%- endfor %}
+			</div>
+			{# /TAGS #}
+			{# HEADING #}
+			<a href="{{ prop.url | url }}">
+				<h2>{{ prop.data.title }}</h2>
+			</a>
+			<p>{{ prop.data.description }}</p>
+			{# /HEADING #}
+			{# BUTTON #}
+			<a class="btn" href="{{ prop.url | url }}">Открыть</a>
+			{# /BUTTON #}
+		</div>
+	{% endfor %}
+</div>
+{# /POSTS #}

@@ -1,0 +1,34 @@
+.story {
+  .heading h2 {
+    @apply font-semibold mb-4 text-4xl;
+  }
+  .content {
+    @apply gap-24 md:gap-4;
+
+    .group {
+      @apply grid-flow-row md:grid-flow-col md:justify-between items-center gap-0 md:gap-16;
+
+      .imgbar {
+        @apply mb-5;
+      }
+
+      .textbar {
+        @apply justify-items-center md:justify-items-start px-4 h-max;
+
+        h3 {
+          @apply text-2xl sm:text-4xl font-bold mb-4 text-left;
+        }
+      }
+    }
+
+    .group {
+      .imgbar {
+        @apply order-1;
+      }
+
+      .textbar {
+        @apply order-2;
+      }
+    }
+  }
+}

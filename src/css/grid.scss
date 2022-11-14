@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+form,
+input,
+button,
+nav,
+main,
+header,
+footer,
+section,
+article,
+blockquote,
+.btn,
+.wrap {
+  @apply grid justify-items-center transition-all h-max;
+}

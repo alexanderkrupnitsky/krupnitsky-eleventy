@@ -1,0 +1,41 @@
+---
+layout: page-layout.njk
+permalink: /contacts/
+title: Контакты Александры Краснобаевой
+description: Контакты, по которым со мной можно связаться. Соцсети, Мессенджеры и Email
+---
+<article>
+	{# HEADING #}
+	<section class="heading w1200"></section>
+	{# /HEADING #}
+	{# CONTENT #}
+	<div class="content w1200">
+		{# TITLE #}
+		<h1>{{ title }}</h1>
+		{# /TITLE #}
+		{# TEXT #}
+		<div class="text">
+			<p class="text-center text-lg">Для связи со мной напишите на указанные ниже соцсети, мессенджеры или электронную&nbsp;почту.</p>
+
+			{# SOCIAL #}
+			<div class="social order-2 md:order-1 mt-10">
+				<div class="social-link grid-flow-row">
+					{% for prop in data.social %}
+						<a class="grid grid-flow-col items-center gap-2" href="{{ prop.url }}" target="_blank"><img src="{{ prop.icon }}" alt="{{ prop.alt }}" target="_blank">{{prop.text}}</a>
+					{% endfor %}
+					<span class="grid grid-flow-col items-center gap-2"><img src="https://res.cloudinary.com/dr24pbwrs/image/upload/q_auto,f_auto/v1642446599/krasnobaeva.com/email_nqsj1q.png" alt="Написать Александре Краснобаевой на Электронную почту" target="_blank">
+						{% include "email.njk" %}</span>
+
+					<script defer src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+					<iframe src="https://forms.yandex.ru/u/633eb42c9fc1098944aa8bc4/?iframe=1" frameborder="0" name="ya-form-633eb42c9fc1098944aa8bc4" width="650" style=""></iframe>
+
+					<p class="text-sm italic mt-8">* Признана экстремистской соцсетью в РФ</p>
+				</div>
+			</div>
+			{# /SOCIAL #}
+
+		</div>
+		{# /TEXT #}
+	</div>
+	{# /CONTENT #}
+</article>

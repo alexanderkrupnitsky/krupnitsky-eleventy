@@ -1,0 +1,25 @@
+main,
+article,
+section {
+  @apply w-full bg-white;
+}
+
+section {
+  @apply py-[85px];
+
+  &#hero {
+    @apply py-0;
+  }
+
+  header {
+    @apply mb-8;
+
+    h2 {
+      @apply mb-4 text-3xl font-extrabold sm:text-4xl;
+    }
+
+    p {
+      @apply mb-20 w-full min-w-[260px] max-w-[850px] text-center;
+    }
+  }
+}

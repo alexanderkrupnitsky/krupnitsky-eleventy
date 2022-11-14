@@ -1,0 +1,11 @@
+{# PAGINATION #}
+<div id="pagination" class="grid-flow-col justify-center my-20 gap-5">
+	{% if pagination.href.previous %}
+		<a href="{{pagination.href.previous}}">Назад</a>
+	{% endif %}
+Страница: {{ pagination.pageNumber + 1 }} из {{ pagination.links | length  }}
+	{% if pagination.href.next %}
+		<a href="{{pagination.href.next}}">Вперед</a>
+	{% endif %}
+</div>
+{# /PAGINATION #}

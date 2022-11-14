@@ -1,0 +1,49 @@
+{
+  "navUrl": [
+    { "url": "/", "text": "Главная" },
+    { "url": "/courses/", "text": "Курсы" },
+    { "url": "/about/", "text": "Обо мне" },
+    { "url": "/blog/", "text": "Блог" },
+    { "url": "/contacts/", "text": "Контакты" }
+  ],
+  "navUrlFooter": [
+    { "url": "/", "text": "Главная" },
+    { "url": "/courses/", "text": "Курсы" },
+    { "url": "/about/", "text": "Обо мне" },
+    { "url": "/blog/", "text": "Блог" },
+    { "url": "/contacts/", "text": "Контакты" }
+  ],
+  "social": [
+    {
+      "url": "https://t.me/a_krasnobaeva",
+      "text": "Telegram",
+      "alt": "Александра Краснобаева в Telegram",
+      "icon": "https://res.cloudinary.com/dr24pbwrs/image/upload/q_auto,f_auto/v1642040986/krasnobaeva.com/telegram_p1bzps.png"
+    },
+    {
+      "url": "https://www.youtube.com/AleksandraKrasnobaeva",
+      "text": "Youtube",
+      "alt": "Александра Краснобаева в Youtube",
+      "icon": "https://res.cloudinary.com/dr24pbwrs/image/upload/q_auto,f_auto/v1642040986/krasnobaeva.com/youtube_bjytto.png"
+    },
+    {
+      "url": "https://vk.com/aleksandrakrasnobaeva",
+      "text": "Вконтакте",
+      "alt": "Александра Краснобаева в Вконтакте",
+      "icon": "https://res.cloudinary.com/dr24pbwrs/image/upload/v1665043959/krasnobaeva.com/vk_qdt2m9.png"
+    },
+    {
+      "url": "https://www.instagram.com/aleksandra.krasnobaeva",
+      "text": "Instagram *",
+      "alt": "Александра Краснобаева в Instagram",
+      "icon": "https://res.cloudinary.com/dr24pbwrs/image/upload/q_auto,f_auto/v1642079868/krasnobaeva.com/instagram_hjdpyk.png"
+    }
+  ],
+  "author": {
+    "name": "Александра Краснобаева",
+    "avatar": "https://res.cloudinary.com/dr24pbwrs/image/upload/v1642034888/krasnobaeva.com/avatar_zouax3.jpg",
+    "about": "/about/",
+    "hostname": "https://krasnobaeva.com",
+    "domain": "krasnobaeva.com"
+  }
+}

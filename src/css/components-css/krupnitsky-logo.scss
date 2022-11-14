@@ -1,0 +1,22 @@
+.supported {
+  @apply justify-self-center self-end md:justify-self-end items-end mb-4;
+
+  .svglogo {
+    @apply h-11;
+    fill: white;
+
+    &:hover {
+      .logo1 {
+        fill: #5a5a5a;
+      }
+
+      .logo2 {
+        fill: white;
+      }
+    }
+
+    .logo2 {
+      fill: #b3b3b3;
+    }
+  }
+}

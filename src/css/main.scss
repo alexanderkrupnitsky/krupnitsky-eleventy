@@ -1,0 +1,30 @@
+// ========== BASE ==========
+html {
+  // scroll-behavior: smooth;
+}
+
+body {
+  @apply m-auto min-w-[1920px] min-w-[320px] bg-[#f0f0f0] font-sans text-base text-dark;
+}
+
+.w900 {
+  @apply w-full;
+  padding-left: calc((100% - 900px) / 2);
+  padding-right: calc((100% - 900px) / 2);
+}
+
+.w1200 {
+  @apply w-full;
+  padding-left: calc((100% - 1200px) / 2);
+  padding-right: calc((100% - 1200px) / 2);
+}
+
+.w1600 {
+  @apply w-full;
+  padding-left: calc((100% - 1600px) / 2);
+  padding-right: calc((100% - 1600px) / 2);
+}
+
+iframe.footer_iframe {
+  display: none !important;
+}

@@ -1,0 +1,58 @@
+const _ = require('lodash')
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  mode: 'jit',
+  content: ['./src/**/*.{md,njk,html,js,scss,css}'],
+  theme: {
+    fontFamily: {
+      sans: ['"Inter", sans-serif'],
+      display: ['"Fira Sans", sans-serif'],
+      cond: ['"Fira Sans Condensed", sans-serif'],
+    },
+    colors: {
+      primary: {
+        light: 'hsla(35 65% 73% / 1)',
+        base: 'hsla(35 68% 53% / 1)',
+        dark: 'hsla(35 76% 33% / 1)',
+      },
+      secondary: 'hsl(54, 27%, 47%)',
+      tertiary: '',
+      link: 'hsl(201 96% 32%)',
+      hover: 'hsl(0 84% 60%)',
+      warn: '',
+      dark: '#212121',
+      gray: colors.neutral,
+      white: colors.white,
+      black: colors.black,
+      red: colors.red,
+      orange: colors.orange,
+      amber: colors.amber,
+      yellow: colors.yellow,
+      lime: colors.lime,
+      green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      sky: colors.sky,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      pink: colors.pink,
+      rose: colors.rose,
+    },
+    extend: {},
+    screens: {
+      xxs: '320px',
+      xs: '375px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      '2lg': '1200px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+  },
+}

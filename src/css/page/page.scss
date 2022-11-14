@@ -1,0 +1,70 @@
+#page {
+  section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .heading {
+    background-color: hsl(25 33% 93%);
+  }
+
+  .content {
+    @apply mb-20;
+
+    h1,
+    h2,
+    h3 {
+      @apply font-cond mb-2 px-4;
+    }
+
+    h1 {
+      @apply text-3xl sm:text-4xl mt-10 mb-6 text-center;
+    }
+
+    h2 {
+      @apply text-xl sm:text-3xl text-left justify-self-start;
+    }
+
+    h3 {
+      @apply text-lg sm:text-xl text-left justify-self-start;
+    }
+
+    .text {
+      max-width: 900px;
+      min-width: 288px;
+      width: 100%;
+
+      img {
+        @apply my-10;
+        width: auto;
+        max-height: 768px;
+      }
+
+      p {
+        @apply px-4 justify-self-start;
+        line-height: 160%;
+      }
+    }
+
+    .social {
+      @apply mb-10 md:mb-0;
+
+      .social-link {
+        @apply justify-items-start;
+      }
+
+      img {
+        @apply m-0 p-0;
+        width: 45px;
+        height: auto;
+      }
+
+      .social-link {
+        @apply gap-2;
+        a {
+          @apply hover:opacity-70;
+        }
+      }
+    }
+  }
+}
