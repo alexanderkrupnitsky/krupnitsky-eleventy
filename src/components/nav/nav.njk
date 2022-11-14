@@ -1,5 +1,16 @@
-<nav class="">
-	{% for prop in nav.header %}
-		<a href="{{ prop.url }}" {% if page.url == prop.url %} aria-current="page"{% endif %}>{{ prop.text }}</a>
-	{% endfor %}
+<nav class="navbar x2:col-span-2 x5:col-span-3 py-4">
+	<div id="burger" class="burger">
+		<span class="burger-line"></span>
+		<span class="burger-line"></span>
+		<span class="burger-line"></span>
+	</div>
+	<div id="menu" class="menu">
+		<ul class="grid">
+			{% for prop in nav.header %}
+				<li>
+					<a href="{{ prop.url }}">{{ prop.text }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 </nav>

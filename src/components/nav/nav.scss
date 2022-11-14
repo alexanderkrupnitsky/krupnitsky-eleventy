@@ -1,1 +1,66 @@
-// .nav {}
+.navbar {
+  @apply auto-cols-auto grid-flow-col justify-center gap-2 py-3 md:py-2;
+}
+
+.menu {
+  @apply fixed top-0 right-[-100%] h-full w-full overflow-hidden bg-black bg-opacity-90 md:relative md:relative md:right-0 md:bg-opacity-0;
+  transition: all 0.4s ease-in-out;
+
+  ul {
+    @apply mt-40 h-fit justify-center justify-items-center gap-4 md:mt-0 md:grid-flow-col;
+  }
+
+  li {
+    @apply m-0 list-none p-0;
+  }
+
+  a {
+    @apply text-lg font-medium text-white hover:text-hover md:text-base;
+  }
+
+  &.is-active {
+    @apply right-0 h-full w-full;
+  }
+}
+
+.burger {
+  @apply relative z-10 block h-[1rem] w-[1.75rem] cursor-pointer md:hidden;
+  user-select: none;
+  order: -1;
+  transform: rotate(0deg);
+  transition: 0.3s ease;
+
+  &-line {
+    @apply absolute right-0 block h-[2px] w-full border-none bg-white opacity-100 outline-0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2) {
+      top: 0.5rem;
+    }
+    &:nth-child(3) {
+      top: 1rem;
+    }
+  }
+
+  &.is-active .burger-line {
+    @apply bg-white;
+
+    &:nth-child(1) {
+      top: 0.5rem;
+      transform: rotate(135deg);
+    }
+    &:nth-child(2) {
+      right: -1.5rem;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:nth-child(3) {
+      top: 0.5rem;
+      transform: rotate(-135deg);
+    }
+  }
+}
