@@ -1,0 +1,5 @@
+<nav class="">
+	{% for prop in nav.header %}
+		<a href="{{ prop.url }}" {% if page.url == prop.url %} aria-current="page"{% endif %}>{{ prop.text }}</a>
+	{% endfor %}
+</nav>

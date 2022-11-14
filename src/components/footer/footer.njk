@@ -4,20 +4,13 @@
 <nav>
 	<div class="menu">
 		<h3>Страницы</h3>
-		{% for prop in data.navUrlFooter %}
+		{% for prop in nav.footer %}
 			<a href="{{prop.url}}">{{prop.text}}</a>
 		{% endfor %}
 	</div>
 	<div class="menu">
-		<h3>Курсы</h3>
-		<a href="#!">Вязание спицами</a>
-		<a href="#!">Продвижение в соцсетях</a>
-		<a href="#!">Личный бренд</a>
-		<a href="#!">Производство контента</a>
-	</div>
-	<div class="menu">
 		<h3>Контакты</h3>
-		{% for prop in data.social %}
+		{% for prop in contacts %}
 			<a href="{{prop.url}}" target="_blank">{{prop.text}}</a>
 		{% endfor %}
 		{% include "email.njk" %}
@@ -35,15 +28,16 @@
 			<a href="#!" target="_blank">Пользовательское соглашение</a>
 		</div>
 		<div class="copy mt-4">
-			<p>&copy; 2011-<span id="currentyear"></span> Krasnobaeva.com. Все права защищены</p>
+			<p>&copy; 2011-<span id="currentyear"></span>
+				{{ project.domain }}. Все права защищены</p>
 		</div>
 	</div>
 	{# /LEGAL #}
 	{# SUPPORTED #}
 	<div class="supported">
-		{# <a href="#!" target="_blank"> #}
-		{% include "svg/krupnitsky-logo.njk" %}
-		{# </a> #}
+		<a href="{{ project.site }}" target="_blank">
+			{% include "svg/krupnitsky-logo.njk" %}
+		</a>
 	</div>
 	{# SUPPORTED #}
 </div>
